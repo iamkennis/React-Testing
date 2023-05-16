@@ -8,7 +8,7 @@ export default function Skill(props: SkillsProps) {
 React.useEffect(() => {
     setTimeout(() => {
     setIsLoggedIn(true)
-    },2000)
+    },500)
 },[])
 
 

@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Skill from "./skills";
+import React from 'react'
 
 describe("Skills", () => {
   const skills = ["React", "Vue", "Solid"];
@@ -40,9 +41,10 @@ describe("Skills", () => {
         name: "Start learning",
       },
       {
-        timeout: 2000,
+        timeout: 1000,
       }
     );
+    // screen.debug()
     expect(startLearningButton).toBeInTheDocument();
   });
 });

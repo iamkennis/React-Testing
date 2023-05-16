@@ -14,10 +14,10 @@ export default function Application() {
             <img src='https://via.placehoder-150.com' alt="a person with a laptop" />
             <div data-testid="custom-element">Custom html element</div>
         </div>
-        <div>
+        {/* <div>
             <label htmlFor='bio'>Bio</label>
             <input type="bio" id="bio"/>
-        </div>
+        </div> */}
         <div>
             <label htmlFor='job-location'>Name</label>
             <select id="job-location">

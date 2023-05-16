@@ -1,5 +1,6 @@
-import { getByRole, render, screen } from "@testing-library/react";
+import { render, screen , getByRole} from "@testing-library/react";
 import Application from "./application";
+import React from 'react'
 
 describe("Application", () => {
   test("render correctly", () => {
@@ -45,10 +46,10 @@ describe("Application", () => {
     const nameElement4 = screen.getByDisplayValue("Kennis");
     expect(nameElement4).toBeInTheDocument();
 
-    const bioElement = screen.getByRole("textbox", {
-      name: "Bio",
-    });
-    expect(bioElement).toBeInTheDocument();
+    // const bioElement = screen.getByRole('textbox', {
+    //   name: "Bio"
+    // });
+    // expect(bioElement).toBeInTheDocument();
 
     const selectElement = screen.getByRole("combobox");
     expect(selectElement).toBeInTheDocument();

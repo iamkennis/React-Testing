@@ -1,5 +1,7 @@
+import React from 'react'
 import {render, screen} from "@testing-library/react";
 import Greet from "./greet";
+
 
 
 describe('Greet', () => {
